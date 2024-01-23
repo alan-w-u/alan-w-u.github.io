@@ -24,6 +24,7 @@ Order for CSS Documentation
     --paynes-grey: #555B6E;
     --seasalt: #FAF9F9;
     --cambridge-blue: #89B0AE;
+    --rose-ebony: #764f51;
     --mint-green: #BEE3DB;
     --apricot: #FFD6BA;
 }
@@ -36,7 +37,8 @@ Order for CSS Documentation
     font-size: 1.1rem;
     font-weight: bold;
     color: var(--seasalt);
-    text-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
+    letter-spacing: 0.02rem;
+    text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
     text-decoration: none;
 }
 
@@ -45,8 +47,8 @@ html, body {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
+    margin: 0;
     background-color: var(--paynes-grey);
     align-items: center;
     scroll-behavior: smooth;
@@ -59,7 +61,7 @@ nav {
     height: auto;
     top: 0;
     padding: 0.35rem;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
 }
@@ -77,10 +79,14 @@ footer {
 section {
     width: 100%;
     height: auto;
-    padding: 4rem 3rem 0rem 3rem;
+    padding: 3rem 3rem 0 3rem;
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+figure {
+    margin: 0;
 }
 
 h1 {
@@ -92,6 +98,10 @@ h1 {
 h2 {
     font-size: 1.5rem;
     color: var(--apricot);
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 p {
@@ -116,23 +126,55 @@ p {
 }
 
 .about-info-key {
-    margin: 1.5rem 0rem 0.5rem 0rem;
+    margin: 1.25rem 0 0 0;
     font-size: 1rem;
     color: var(--apricot);
 }
 
 .about-info-value {
-    margin: 0.5rem 0rem;
+    margin: 0.5rem 0;
     font-size: 1rem;
     font-weight: bold;
 }
 
 .about-info-contact {
-    width: 2rem;
+    width: 3rem;
     height: auto;
-    margin: 1rem 0.5rem;
-    filter: invert(100%);
+    padding: 0.5rem;
+    margin: 1rem 0;
+    filter: invert(100);
 }
+
+.about-info-contact:hover {
+    border-radius: 0.75rem;
+    background-color: var(--rose-ebony); 
+}
+
+.about-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-logo {
+    width: 4rem;
+    height: auto;
+    padding: 0.75rem;
+    margin: 1rem;
+    border-radius: 25%;
+    background-color: var(--rose-ebony);
+    filter: invert(100);
+    transition: width 0.2s, margin 0.2s;
+}
+
+.contact-logo:hover {
+    width: 5rem;
+    height: auto;
+    margin: 0.5rem 0.5rem;
+}
+
 
 /* ID */
 #home {
@@ -152,7 +194,7 @@ p {
     height: auto;
     margin: 1rem;
     border-radius: 25%;
-    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
     transition: width 0.3s, margin 0.3s;
 }
 
@@ -185,31 +227,47 @@ p {
     grid-template-areas: 
         "about-photo about-text"
         "about-info about-skills";
-    padding: 0rem 10rem;
+    padding: 0 10rem;
     align-items: center;
     justify-content: center;
 }
 
 #about-photo {
-    width: 15rem;
+    width: 17rem;
     height: auto;
+    margin: 0 1rem 0 0;
     border-radius: 25%;
-    box-shadow: 0rem 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
 }
 
 #about-blurb {
-    width: 42rem;
+    width: 45rem;
     height: auto;
-    padding: 0rem 2rem;
+    padding: 0 2rem;
     text-align: left;
 }
 
 #about-info {
+    padding: 0.1rem 0 0 0;
     text-align: left;
 }
 
 #about-skills {
     width: auto;
     height: 100%;
-    padding: 0rem 2rem;
+    padding: 0 2rem;
+}
+
+#about-skills img {
+    width: auto;
+    height: 4.5rem;
+    padding: 0.5rem;
+    margin: 0 0.5rem 0 0.5rem;
+    border-radius: 15%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#about-skills figcaption {
+    margin: 0rem 0rem 0.5rem 0rem;
+    font-size: 1rem;
 }
