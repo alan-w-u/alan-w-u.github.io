@@ -87,6 +87,8 @@ section {
 
 figure {
     margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -109,12 +111,6 @@ p {
 }
 
 /* Classes */
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .nav-link {
     padding: 0.75rem 1rem;
     font-size: 1rem;
@@ -181,6 +177,12 @@ p {
     height: 100%;
     background-image: url("images/home.jpg");
     background-size: cover;
+}
+
+#home a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #picture {
@@ -268,6 +270,12 @@ p {
     width: auto;
     height: 100%;
     padding: 0 2rem;
+}
+
+#about-skills div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #about-skills img {
