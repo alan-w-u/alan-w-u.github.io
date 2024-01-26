@@ -4,7 +4,7 @@ const navLinks = document.querySelectorAll(".nav-link");
 
 // Options for the IntersectionObserver
 const options = {
-    threshold: 0.75, // Threshold for amount of section visible (%) before section is highlighted in the navigation bar
+    threshold: 0.5, // Threshold for amount of section visible (%) before section is highlighted in the navigation bar
 };
 
 // Highlight the section that is being viewed on the navigation bar
