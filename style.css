@@ -109,6 +109,12 @@ p {
 }
 
 /* Classes */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-link {
     padding: 0.75rem 1rem;
     font-size: 1rem;
@@ -142,20 +148,12 @@ p {
     height: auto;
     padding: 0.5rem;
     margin: 1rem 0;
-    filter: invert(100);
+    filter: invert();
 }
 
 .about-info-contact:hover {
     border-radius: 0.75rem;
     background-color: var(--rose-ebony); 
-}
-
-.about-skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 .contact-logo {
@@ -165,7 +163,7 @@ p {
     margin: 1rem;
     border-radius: 25%;
     background-color: var(--rose-ebony);
-    filter: invert(100);
+    filter: invert();
     transition: width 0.2s, margin 0.2s;
 }
 
@@ -175,7 +173,6 @@ p {
     margin: 0.5rem 0.5rem;
 }
 
-
 /* ID */
 #home {
     display: flex;
@@ -184,9 +181,6 @@ p {
     height: 100%;
     background-image: url("images/home.jpg");
     background-size: cover;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 
 #picture {
@@ -220,6 +214,24 @@ p {
     font-size: 1.25rem;
     color: var(--paynes-grey);
     text-shadow: none;
+}
+
+#downarrow {
+    position: absolute;
+    bottom: 1rem;
+    width: 2.5rem;
+    height: auto;
+    filter: invert();
+    animation: moveupdown 1.5s ease-in-out infinite;
+}
+
+@keyframes moveupdown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-1rem);
+    }
 }
 
 #about-container {
