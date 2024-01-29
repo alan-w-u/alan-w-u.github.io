@@ -11,7 +11,7 @@
     <nav>
         <a href="#home" class="nav-link">Home</a>
         <a href="#about" class="nav-link">About</a>
-        <!-- <a href="#projects" class="nav-link">Projects</a> -->
+        <a href="#projects" class="nav-link">Projects</a>
         <a href="#contact" class="nav-link">Contact</a>
     </nav>
     <main>
@@ -19,7 +19,7 @@
             <a href="#about"><img src="images/alanwu.jpg" alt="profile picture" id="picture"></a>
             <div id="name">Alan Wu</div>
             <div id="tag">Computer Science @ UBC</div>
-            <a href="#about"><img src="images/downarrow.png" alt="downarrow" id="downarrow"></a>
+            <a href="#about"><img src="images/down-arrow.png" alt="down arrow" id="down-arrow"></a>
         </section>
         <section id="about">
             <h1>About</h1>
@@ -103,7 +103,7 @@
                             <figcaption>Node.js</figcaption>
                         </figure>
                         <figure>
-                            <img src="images/raspberrypi.png" alt="raspberrypi">
+                            <img src="images/raspberry-pi.png" alt="raspberry pi">
                             <figcaption>Raspberry Pi</figcaption>
                         </figure>
                         <figure>
@@ -114,13 +114,133 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="projects">
+        <section id="projects">
             <h1>Projects</h1>
-        </section> -->
+            <br>
+            <h3>Hover to Read More</h3>
+            <h3>Click to View Project</h3>
+            <div>
+                <a href="https://github.com/alan-w-u/foodease" target="_blank">
+                    <figure>
+                        <h2>Foodease</h2>
+                        <img src="images/foodease.png" alt="foodease">
+                        <figcaption>
+                            <div>
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>JavaScript</button>
+                                <button>Node.js</button>
+                                <button>React.js</button>
+                            </div>
+                            <p>
+                                Foodease is a website dedicated to solving the infamous question: "Where should we eat?"
+                                The web app leverages <b>OpenAI API</b> to generate curated cuisines, <b>Pixels API</b> to dynamically retrieve dish-related images, and <b>Google Places API</b> to return a relevant restaurant along with its information, location, and directions.
+                                <br><br>
+                                Project at <b>nwHacks 2024</b>, a 24-hour hackathon of 740+ participants hosted at the University of British Columbia in Vancouver, B.C.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://alan-w-u.github.io/touchtype" target="_blank">
+                    <figure>
+                        <h2>TouchType</h2>
+                        <img src="images/touchtype.png" alt="touchtype">
+                        <figcaption>
+                            <div>
+                                <button>HTML</button>
+                                <button>CSS</button>
+                                <button>JavaScript</button>
+                            </div>
+                            <p>
+                                TouchType is a website that delivers various keyboard-related activities and information to users.
+                                It includes a <b>Typing Test</b>, <b>Keyboard Test</b>, and <b>Reaction Time Test</b>.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://github.com/alan-w-u/nook" target="_blank">
+                    <figure>
+                        <h2>Nook🥈</h2>
+                        <img src="images/nook.png" alt="nook">
+                        <figcaption>
+                            <div>
+                                <button>Java</button>
+                                <button>Figma</button>
+                            </div>
+                            <p>
+                                Nook is an app that helps university and college students find a study spot on campus.
+                                It shows estimated capacity ratings to help gauge the availability of these untracked facilities.
+                                Accessibility-focused design with different colour settings catered to common colour blindnesses to help colour blind users.
+                                <br><br>
+                                <b>🥈 Second place</b> project at <b>HelloHacks 2023</b>, a hackathon of 70+ participants hosted at the University of British Columbia in Vancouver, B.C.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://github.com/alan-w-u/restaurant-table-manager" target="_blank">
+                    <figure>
+                        <h2>Restaurant Table<br>Manager</h2>
+                        <img src="images/restaurant-table-manager.png" alt="restaurant table manager">
+                        <figcaption>
+                            <div>
+                                <button>Java</button>
+                                <button>Swing</button>
+                                <button>JUnit</button>
+                            </div>
+                            <p>
+                                Table Restaurant Manager is an application that helps waiters track restaurant table availability and orders.
+                                Restaurant menus, table orders, and table availabilities can be loaded and saved using <b>JSON</b> for data persistence.
+                                <br><br>
+                                Dynamic and interactive GUI created using the <b>Java Swing</b> library.
+                                Code was written in a <b>JUnit test-driven</b> environment with <b>100% test coverage</b>.
+                                Debugging aided by event log implemented via the singleton pattern.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://github.com/alan-w-u/floating-fish" target="_blank">
+                    <figure>
+                        <h2>Floating Fish</h2>
+                        <img src="images/floating-fish.png" alt="floating fish">
+                        <figcaption>
+                            <div>
+                                <button>Java</button>
+                                <button>Swing</button>
+                            </div>
+                            <p>
+                                Floating Fish is a simple side-scrolling endless runner game.
+                                This application was used as a learning tool to teach a friend the fundamentals of <b>object-oriented programming</b> via Java and Swing.
+                                <br><br>
+                                This game demonstrates design elements such as <b>type hierarchies</b>, <b>polymorphism</b>, and <b>abstract classes</b>.
+                                It also demonstrates how to create a GUI and register key inputs to control the game.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://github.com/alan-w-u/simple-mini-games" target="_blank">
+                    <figure>
+                        <h2>Simple Mini Games</h2>
+                        <img src="images/simple-mini-games.png" alt="simple mini games">
+                        <figcaption>
+                            <div>
+                                <button>Python</button>
+                                <button>Pygame</button>
+                            </div>
+                            <p>
+                                Simple Mini Games is a collection of games including <b>Snake</b>, <b>Tic Tac Toe</b>, and <b>Pong</b>.
+                                The games were created using the Pygame library to handle the GUI and inputs.
+                                <br><br>
+                                This was a Capstone Project for grade 12 (senior year of high school) as required by the B.C. curriculum.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </section>
         <section id="contact">
             <h1>Contact</h1>
             <br>
-            <h3>Feel free to connect!</h3>
+            <h3>Feel Free to Connect!</h3>
             <a href="mailto:alanwu0004@gmail.com"><img src="images/email.png" alt="email" class="contact-logo"></a>
             <a href="https://www.linkedin.com/in/alan-w-u" target="_blank"><img src="images/linkedin.png" alt="linkedin" class="contact-logo"></a>
             <a href="https://github.com/alan-w-u" target="_blank"><img src="images/github.png" alt="github" class="contact-logo"></a>
