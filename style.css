@@ -24,10 +24,10 @@ Order for CSS Documentation
     --paynes-grey: #555B6E;
     --storm-grey: #6C7181;
     --slate-grey: #6B738B;
+    --apricot: #FFD6BA;
     --seasalt: #FAF9F9;
     --cambridge-blue: #89B0AE;
     --rose-ebony: #764f51;
-    --apricot: #FFD6BA;
 }
 
 /* Main HTML/Semantic (Section) Elements */
@@ -38,7 +38,7 @@ Order for CSS Documentation
     font-weight: bold;
     color: var(--seasalt);
     letter-spacing: 0.02rem;
-    text-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
@@ -113,14 +113,13 @@ p {
 /* Classes */
 .nav-link {
     padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
     font-size: 1rem;
-    color: var(--seasalt);
 }
 
 .nav-link:hover {
-    border-radius: 0.75rem;
     background-color: var(--cambridge-blue); 
-    color: var(--seasalt);
+    transition: 0.2s ease-in-out;
 }
 
 .nav-link.active {
@@ -145,11 +144,19 @@ p {
     padding: 0.5rem;
     margin: 1rem 0;
     filter: invert();
+    transition: 0.2s ease-in-out;
 }
 
 .about-info-contact:hover {
+    width: 4rem;
+    height: auto;
+    margin: 0.5rem 0;
     border-radius: 0.75rem;
-    background-color: var(--rose-ebony); 
+    background-color: var(--rose-ebony);
+}
+
+.projects-live-website {
+    color: gold;
 }
 
 .contact-logo {
@@ -190,7 +197,7 @@ p {
     height: auto;
     margin: 1rem;
     border-radius: 25%;
-    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in-out;
 }
 
@@ -225,7 +232,13 @@ p {
     width: 2.5rem;
     height: auto;
     filter: invert();
+    transition: 0.2s ease-in-out;
     animation: moveupdown 2.5s ease-in-out infinite;
+}
+
+#down-arrow:hover {
+    width: 3rem;
+    height: auto;
 }
 
 @keyframes moveupdown {
@@ -252,7 +265,7 @@ p {
     height: auto;
     margin: 0 1rem 0 0;
     border-radius: 25%;
-    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 #about-blurb {
@@ -325,7 +338,7 @@ p {
     border-radius: 1rem;
     background-color: var(--storm-grey);
     font-size: 0;
-    transition: transform 0.3s, font-size 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 #projects figure:hover {
@@ -358,4 +371,5 @@ p {
     border-radius: 0.25rem;
     background-color: var(--slate-grey);
     font-size: 1rem;
+    text-shadow: none;
 }
