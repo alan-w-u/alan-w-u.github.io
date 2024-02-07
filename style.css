@@ -34,7 +34,7 @@ Order for CSS Documentation
 * {
     box-sizing: border-box;
     font-family: Verdana, Arial, sans-serif;
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 1.25vw, 1.1rem);
     font-weight: bold;
     color: var(--seasalt);
     letter-spacing: 0.02rem;
