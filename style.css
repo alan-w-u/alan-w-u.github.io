@@ -40,6 +40,7 @@ Order for CSS Documentation
     letter-spacing: 0.02rem;
     text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    scrollbar-gutter: auto;
 }
 
 html, body {
