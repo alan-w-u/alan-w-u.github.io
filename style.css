@@ -59,6 +59,7 @@ nav {
     position: fixed;
     width: 100%;
     height: auto;
+    z-index: 1;
     top: 0;
     padding: 0.25rem;
     background-color: rgba(0, 0, 0, 0.3);
@@ -233,7 +234,7 @@ p {
     height: auto;
     filter: invert();
     transition: 0.2s ease-in-out;
-    animation: moveupdown 2.5s ease-in-out infinite;
+    animation: moveupdown 1.75s ease-in-out infinite;
 }
 
 #down-arrow:hover {
@@ -251,11 +252,8 @@ p {
 }
 
 #about-container {
-    display: grid;
-    grid-template-areas: 
-        "about-photo about-text"
-        "about-info about-skills";
-    padding: 0 10rem;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -263,7 +261,6 @@ p {
 #about-photo {
     width: 17rem;
     height: auto;
-    margin: 0 1rem 0 0;
     border-radius: 25%;
     box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
@@ -310,7 +307,6 @@ p {
 #projects div {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -331,6 +327,7 @@ p {
 }
 
 #projects figure {
+    max-width: 100%;
     padding: 1rem;
     margin: 1rem;
     border-style: solid;
