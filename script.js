@@ -1,6 +1,7 @@
 // Constants
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
+const projects = document.querySelectorAll("#projects figure");
 
 // Options for the IntersectionObserver
 const options = {
@@ -24,4 +25,11 @@ const observer = new IntersectionObserver(function (entries) {
 // Observe to update what section is being viewed
 sections.forEach(section => {
     observer.observe(section);
+});
+
+// Make project descriptions visible on touchscreen devices
+document.addEventListener("touchstart", function () {
+    projects.forEach((figure) => {
+        figure.style.fontSize = "1rem";
+    });
 });

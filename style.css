@@ -259,10 +259,10 @@ p {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    max-width: 62rem;
+    max-width: 60rem;
     max-height: auto;
     margin: auto;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 
@@ -274,13 +274,15 @@ p {
 }
 
 #about-blurb {
-    width: 45rem;
+    width: 40rem;
     height: auto;
     padding: 0 2rem;
     text-align: left;
 }
 
 #about-info {
+    width: 18rem;
+    height: auto;
     padding: 0.1rem 0 0 0;
     text-align: left;
 }
@@ -294,6 +296,8 @@ p {
 #about-skills div {
     display: flex;
     flex-wrap: wrap;
+    max-width: 35rem;
+    max-height: auto;
     align-items: center;
     justify-content: center;
 }
