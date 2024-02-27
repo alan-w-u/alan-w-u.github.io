@@ -27,9 +27,15 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-// Make project descriptions visible on touchscreen devices
+// Detect if using a touchscreen device
 document.addEventListener("touchstart", function () {
-    projects.forEach((figure) => {
-        figure.style.fontSize = "1rem";
+    // Make project descriptions visible
+    projects.forEach(project => {
+        project.style.fontSize = "1rem";
+    });
+
+    // Make nav backgrounds transparent
+    navLinks.forEach(navLink => {
+        navLink.style.backgroundColor = "transparent";
     });
 });
