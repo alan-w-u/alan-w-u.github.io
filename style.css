@@ -262,7 +262,6 @@ p {
     max-width: 62rem;
     max-height: auto;
     margin: auto;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -303,13 +302,15 @@ p {
     width: auto;
     height: 4.5rem;
     padding: 0.5rem;
-    margin: 0 0.5rem;
     border-radius: 15%;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+#about-skills figure {
+    margin: 0.5rem;
+}
+
 #about-skills figcaption {
-    margin: 0rem 0rem 0.5rem 0rem;
     font-size: 1rem;
 }
 
