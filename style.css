@@ -259,7 +259,7 @@ p {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    max-width: 62rem;
+    max-width: 57rem;
     max-height: auto;
     margin: auto;
     justify-content: center;
@@ -273,7 +273,7 @@ p {
 }
 
 #about-blurb {
-    width: 45rem;
+    width: 40rem;
     height: auto;
     padding: 0 2rem;
     text-align: left;
@@ -288,7 +288,7 @@ p {
     flex: 1;
     width: auto;
     height: 100%;
-    padding: 0 3rem;
+    padding: 0 1rem;
 }
 
 #about-skills div {
