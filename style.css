@@ -131,7 +131,7 @@ p {
 }
 
 .about-info-key {
-    margin: 1.25rem 0 0 0;
+    margin: 1rem 0 0 0;
     font-size: 1rem;
     color: var(--apricot);
 }
@@ -390,4 +390,8 @@ p {
     background-color: var(--slate-grey);
     font-size: 1rem;
     text-shadow: none;
+}
+
+#contact {
+    padding-bottom: 2rem;
 }
