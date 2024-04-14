@@ -114,11 +114,13 @@ p {
 
 /* Classes */
 .nav-link {
+    display: flex;
     max-width: 25%;
     max-height: auto;
     padding: 0.75rem;
     border-radius: 0.75rem;
     font-size: 1rem;
+    justify-content: center;
 }
 
 .nav-link:hover {

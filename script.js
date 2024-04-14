@@ -5,7 +5,7 @@ const projects = document.querySelectorAll("#projects figure");
 
 // Options for the IntersectionObserver
 const options = {
-    threshold: 0.5, // Threshold for amount of section visible (%) before section is highlighted in the navigation bar
+    threshold: 0.15, // Threshold for amount of section visible (%) before section is highlighted in the navigation bar
 };
 
 // Highlight the section that is being viewed on the navigation bar
