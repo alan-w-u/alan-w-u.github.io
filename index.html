@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,282 +7,288 @@
   <link rel="icon" href="images/alanwu.jpg">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <nav>
     <a href="#home" class="nav-link" draggable="false">Home</a>
     <a href="#about" class="nav-link" draggable="false">About</a>
+    <a href="#experience" class="nav-link" draggable="false">Experience</a>
     <a href="#projects" class="nav-link" draggable="false">Projects</a>
     <a href="#contact" class="nav-link" draggable="false">Contact</a>
   </nav>
   <main>
     <section id="home">
-      <a href="#about" draggable="false"><img src="images/alanwu.jpg" alt="profile picture" id="picture"
-          draggable="false"></a>
-      <div id="name">Alan Wu</div>
-      <div id="tag">Computer Science @ UBC</div>
-      <a href="#about" draggable="false"><img src="images/down-arrow.png" alt="down arrow" id="down-arrow"
-          draggable="false"></a>
+      <a href="#about" draggable="false">
+        <img src="images/alanwu.jpg" alt="profile picture" class="profile-picture" draggable="false">
+      </a>
+      <div class="name">Alan Wu</div>
+      <div class="subheader">Computer Science @ UBC</div>
+      <a href="#about" draggable="false">
+        <img src="images/down-arrow.png" alt="down arrow" class="arrow" draggable="false">
+      </a>
     </section>
     <section id="about">
-      <h1>About</h1>
-      <div id="about-container">
-        <img src="images/about.jpg" alt="about picture" id="about-photo" draggable="false">
-        <p id="about-blurb">
-          Hello! My name is Alan, and I'm a student at the University of British Columbia pursuing a degree in Computer
-          Science.
-          I've always been fascinated by technology, and ever since I self-taught Python in my sophomore year of high
-          school, I have found a similar passion for coding.
-          Since then, I have enriched my programming skills through university classes, self-study, personal projects,
-          and hackathons.
+      <h1 class="title">About</h1>
+      <div class="container">
+        <img src="images/about.jpg" alt="about picture" class="photo" draggable="false">
+        <p class="blurb">
+          Hello! My name is Alan, and I'm a student at the University of British Columbia pursuing a degree in Computer Science.
+          I've always been fascinated by technology, and ever since I self-taught Python in my sophomore year of high school, I have found a similar passion for coding.
+          Since then, I have enriched my programming skills through university classes, self-study, personal projects, and hackathons.
           Aside from my interest in software development, I hope to explore machine learning and AI in the future.
-          I'm eager to embark on new computer science-related opportunities to elevate my personal and professional
-          growth!
+          I'm eager to embark on new computer science-related opportunities to elevate my personal and professional growth!
         </p>
-        <div id="about-info">
-          <p class="about-info-key">NAME:</p>
-          <p class="about-info-value">Alan Wu</p>
-          <p class="about-info-key">LOCATION:</p>
-          <p class="about-info-value">Vancouver, BC, Canada</p>
-          <p class="about-info-key">SCHOOL:</p>
-          <p class="about-info-value">University of British Columbia</p>
-          <p class="about-info-key">DEGREE:</p>
-          <p class="about-info-value">BSc Computer Science</p>
-          <p class="about-info-key">EXPECTED GRADUATION:</p>
-          <p class="about-info-value">May 2027</p>
-          <p class="about-info-key">EMAIL:</p>
-          <p class="about-info-value">alanwu0004@gmail.com</p>
-          <a href="mailto:alanwu0004@gmail.com"><img src="images/email.png" alt="email" class="about-info-contact"
-              draggable="false"></a>
-          <a href="https://www.linkedin.com/in/alan-w-u/" target="_blank"><img src="images/linkedin.png" alt="linkedin"
-              class="about-info-contact" draggable="false"></a>
-          <a href="https://github.com/alan-w-u" target="_blank"><img src="images/github.png" alt="github"
-              class="about-info-contact" draggable="false"></a>
+        <div class="info">
+          <p class="key">NAME:</p>
+          <p class="value title">Alan Wu</p>
+          <p class="key">LOCATION:</p>
+          <p class="value title">Vancouver, BC, Canada</p>
+          <p class="key">SCHOOL:</p>
+          <p class="value title">University of British Columbia</p>
+          <p class="key">DEGREE:</p>
+          <p class="value title">BSc Computer Science</p>
+          <p class="key">EXPECTED GRADUATION:</p>
+          <p class="value title">May 2026</p>
+          <p class="key">EMAIL:</p>
+          <p class="value title">alanwu0004@gmail.com</p>
+          <a href="mailto:alanwu0004@gmail.com">
+            <img src="images/email.png" alt="email" class="contact" draggable="false">
+          </a>
+          <a href="https://www.linkedin.com/in/alan-w-u/" target="_blank">
+            <img src="images/linkedin.png" alt="linkedin" class="contact" draggable="false">
+          </a>
+          <a href="https://github.com/alan-w-u" target="_blank">
+            <img src="images/github.png" alt="github" class="contact" draggable="false">
+          </a>
         </div>
-        <div id="about-skills">
-          <h2>Languages</h2>
+        <div class="skills">
+          <h2 class="title">Languages</h2>
           <div>
             <figure>
-              <img src="images/java.png" alt="java" draggable="false">
+              <img src="images/skills/java.svg" alt="Java" draggable="false">
               <figcaption>Java</figcaption>
             </figure>
             <figure>
-              <img src="images/python.png" alt="python" draggable="false">
+              <img src="images/skills/python.svg" alt="Python" draggable="false">
               <figcaption>Python</figcaption>
             </figure>
             <figure>
-              <img src="images/c++.png" alt="c++" draggable="false">
+              <img src="images/skills/c++.svg" alt="C++" draggable="false">
               <figcaption>C++</figcaption>
             </figure>
             <figure>
-              <img src="images/c.png" alt="c" draggable="false">
+              <img src="images/skills/c.svg" alt="C" draggable="false">
               <figcaption>C</figcaption>
             </figure>
             <figure>
-              <img src="images/html.png" alt="html" draggable="false">
+              <img src="images/skills/html.svg" alt="HTML" draggable="false">
               <figcaption>HTML</figcaption>
             </figure>
             <figure>
-              <img src="images/css.png" alt="css" draggable="false">
+              <img src="images/skills/css.svg" alt="CSS" draggable="false">
               <figcaption>CSS</figcaption>
             </figure>
             <figure>
-              <img src="images/javascript.png" alt="javascript" draggable="false">
+              <img src="images/skills/javascript.svg" alt="JavaScript" draggable="false">
               <figcaption>JavaScript</figcaption>
             </figure>
             <figure>
-              <img src="images/typescript.png" alt="typescript" draggable="false">
+              <img src="images/skills/typescript.svg" alt="TypeScript" draggable="false">
               <figcaption>TypeScript</figcaption>
             </figure>
             <figure>
-              <img src="images/sql.png" alt="sql" draggable="false">
+              <img src="images/skills/sql.svg" alt="SQL" draggable="false">
               <figcaption>SQL</figcaption>
             </figure>
             <figure>
-              <img src="images/r.png" alt="r" draggable="false">
+              <img src="images/skills/r.svg" alt="R" draggable="false">
               <figcaption>R</figcaption>
             </figure>
           </div>
-          <h2>Libraries / Frameworks</h2>
+          <h2 class="title">Libraries / Frameworks</h2>
           <div>
             <figure>
-              <img src="images/reactjs.png" alt="react.js" draggable="false">
-              <figcaption>React.js</figcaption>
+              <img src="images/skills/react.svg" alt="React" draggable="false">
+              <figcaption>React</figcaption>
             </figure>
             <figure>
-              <img src="images/junit.png" alt="junit" draggable="false">
-              <figcaption>JUnit</figcaption>
+              <img src="images/skills/vue.svg" alt="Vue" draggable="false">
+              <figcaption>Vue</figcaption>
             </figure>
             <figure>
-              <img src="images/scikit-learn.png" alt="scikit-learn" draggable="false">
-              <figcaption>Scikit-learn</figcaption>
+              <img src="images/skills/node.svg" alt="Node" draggable="false">
+              <figcaption>Node</figcaption>
             </figure>
             <figure>
-              <img src="images/numpy.png" alt="numpy" draggable="false">
-              <figcaption>NumPy</figcaption>
+              <img src="images/skills/express.svg" alt="Express" draggable="false">
+              <figcaption>Express</figcaption>
             </figure>
             <figure>
-              <img src="images/pandas.png" alt="pandas" draggable="false">
-              <figcaption>Pandas</figcaption>
+              <img src="images/skills/oracle.svg" alt="Oracle" draggable="false">
+              <figcaption>Oracle</figcaption>
             </figure>
             <figure>
-              <img src="images/matplotlib.png" alt="matplotlib" draggable="false">
-              <figcaption>Matplotlib</figcaption>
-            </figure>
-            <figure>
-              <img src="images/rpigpio.png" alt="rpi.gpio" draggable="false">
-              <figcaption>RPi.GPIO</figcaption>
-            </figure>
-            <figure>
-              <img src="images/pygame.png" alt="pygame" draggable="false">
-              <figcaption>Pygame</figcaption>
-            </figure>
-            <figure>
-              <img src="images/sqlite.png" alt="sqlite" draggable="false">
+              <img src="images/skills/sqlite.svg" alt="SQLite" draggable="false">
               <figcaption>SQLite</figcaption>
             </figure>
             <figure>
-              <img src="images/tidyverse.png" alt="tidyverse" draggable="false">
+              <img src="images/skills/jest.svg" alt="Jest" draggable="false">
+              <figcaption>Jest</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/junit.svg" alt="Junit" draggable="false">
+              <figcaption>JUnit</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/scikit-learn.svg" alt="scikit-learn" draggable="false">
+              <figcaption>scikit-learn</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/numpy.svg" alt="Numpy" draggable="false">
+              <figcaption>NumPy</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/pandas.svg" alt="Pandas" draggable="false">
+              <figcaption>Pandas</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/matplotlib.svg" alt="Matplotlib" draggable="false">
+              <figcaption>Matplotlib</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/pygame.svg" alt="Pygame" draggable="false">
+              <figcaption>Pygame</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/tidyverse.svg" alt="Tidyverse" draggable="false">
               <figcaption>Tidyverse</figcaption>
             </figure>
             <figure>
-              <img src="images/tidymodels.png" alt="tidymodels" draggable="false">
+              <img src="images/skills/tidymodels.svg" alt="Tidymodels" draggable="false">
               <figcaption>Tidymodels</figcaption>
             </figure>
           </div>
-          <h2>Developer Tools</h2>
+          <h2 class="title">Developer Tools</h2>
           <div>
             <figure>
-              <img src="images/git.png" alt="git" draggable="false">
+              <img src="images/skills/git.svg" alt="Git" draggable="false">
               <figcaption>Git</figcaption>
             </figure>
             <figure>
-              <img src="images/nodejs.png" alt="node.js" draggable="false">
-              <figcaption>Node.js</figcaption>
+              <img src="images/skills/npm.svg" alt="npm" draggable="false">
+              <figcaption>npm</figcaption>
             </figure>
             <figure>
-              <img src="images/jupyter.png" alt="jupyter" draggable="false">
+              <img src="images/skills/azure-devops.svg" alt="Azure DevOps" draggable="false">
+              <figcaption>Azure DevOps</figcaption>
+            </figure>
+            <figure>
+              <img src="images/skills/jupyter.svg" alt="Jupyter" draggable="false">
               <figcaption>Jupyter</figcaption>
             </figure>
             <figure>
-              <img src="images/figma.png" alt="figma" draggable="false">
+              <img src="images/skills/figma.svg" alt="Figma" draggable="false">
               <figcaption>Figma</figcaption>
             </figure>
             <figure>
-              <img src="images/vite.png" alt="vite" draggable="false">
+              <img src="images/skills/vite.svg" alt="Vite" draggable="false">
               <figcaption>Vite</figcaption>
             </figure>
             <figure>
-              <img src="images/json.png" alt="json" draggable="false">
-              <figcaption>JSON</figcaption>
-            </figure>
-            <figure>
-              <img src="images/raspberry-pi.png" alt="raspberry pi" draggable="false">
+              <img src="images/skills/raspberry-pi.svg" alt="Raspberry Pi" draggable="false">
               <figcaption>Raspberry Pi</figcaption>
             </figure>
             <figure>
-              <img src="images/arduino.png" alt="arduino" draggable="false">
+              <img src="images/skills/arduino.svg" alt="Arduino" draggable="false">
               <figcaption>Arduino</figcaption>
             </figure>
           </div>
         </div>
       </div>
     </section>
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+    </section>
     <section id="projects">
-      <h1>Projects</h1>
-      <br>
-      <h3>Hover to Read More / Click to View Project</h3>
+      <h1 class="title">Projects</h1>
+      <h3>Click to View Project</h3>
       <div>
         <a href="https://github.com/alan-w-u/foodease" target="_blank">
           <figure>
             <h2>Foodease</h2>
-            <img src="images/foodease.png" alt="foodease" draggable="false">
+            <img src="images/projects/foodease.png" alt="foodease" draggable="false">
             <figcaption>
               <div>
+                <button>JavaScript</button>
+                <button>React</button>
+                <button>Node</button>
                 <button>HTML</button>
                 <button>CSS</button>
-                <button>JavaScript</button>
-                <button>Node.js</button>
-                <button>React.js</button>
               </div>
-              <p>
-                Foodease is a website dedicated to solving the infamous question: "Where should we eat?"
-                The web app leverages <b>OpenAI API</b> to generate curated cuisines, <b>Pexels API</b> to dynamically
-                retrieve dish-related images, and <b>Google Places API</b> to return a relevant restaurant along with
-                its information, location, and directions.
-                <br><br>
-                Project at <b>nwHacks 2024</b>, a 24-hour hackathon of 740+ participants hosted at the University of
-                British Columbia in Vancouver, B.C.
-              </p>
+              Foodease is a website dedicated to solving the infamous question: "Where should we eat?"
+              The web app leverages <b>OpenAI API</b> to generate curated cuisines, <b>Pexels API</b> to dynamically
+              retrieve dish-related images, and <b>Google Places API</b> to return a relevant restaurant along with
+              its information, location, and directions.
+              <br><br>
+              Project at <b>nwHacks 2024</b>, a 24-hour hackathon of 740+ participants hosted at UBC.
             </figcaption>
           </figure>
         </a>
         <a href="https://alan-w-u.github.io/touchtype" target="_blank">
           <figure>
             <h2>TouchType</h2>
-            <img src="images/touchtype.png" alt="touchtype" draggable="false">
+            <img src="images/projects/touchtype.png" alt="touchtype" draggable="false">
             <figcaption>
               <div>
                 <button>HTML</button>
                 <button>CSS</button>
                 <button>JavaScript</button>
-                <button class="projects-live-website">Live Website</button>
+                <button class="live-website">Live Website</button>
               </div>
-              <p>
-                TouchType is a website that delivers various keyboard-related activities and information to users.
-                It includes a <b>Typing Test</b>, <b>Keyboard Test</b>, and <b>Reaction Time Test</b>.
-              </p>
+              TouchType is a website that delivers various keyboard-related activities and information to users.
+              It includes a <b>Typing Test</b>, <b>Keyboard Test</b>, and <b>Reaction Time Test</b>.
             </figcaption>
           </figure>
         </a>
         <a href="https://github.com/alan-w-u/nook" target="_blank">
           <figure>
-            <h2>Nook🥈</h2>
-            <img src="images/nook.png" alt="nook" draggable="false">
+            <h2>Nook</h2>
+            <img src="images/projects/nook.png" alt="nook" draggable="false">
             <figcaption>
               <div>
                 <button>Java</button>
                 <button>Figma</button>
               </div>
-              <p>
-                Nook is an app that helps university and college students find a study spot on campus.
-                It shows estimated capacity ratings to help gauge the availability of these untracked facilities.
-                Accessibility-focused design with different colour settings catered to common colour blindnesses to help
-                colour blind users.
-                <br><br>
-                <b>🥈 Second place</b> project at <b>HelloHacks 2023</b>, a hackathon of 70+ participants hosted at the
-                University of British Columbia in Vancouver, B.C.
-              </p>
+              <b>Finalist project</b> at <b>HelloHacks 2023</b>, a business hackathon of 70+ participants hosted at UBC.
+              <br><br>
+              Nook is an app that helps university and college students find a study spot on campus.
+              It shows estimated capacity ratings to help gauge the availability of these untracked facilities.
+              Accessibility-focused design with different colour settings catered to common colour blindnesses to help colourblind users.
             </figcaption>
           </figure>
         </a>
         <a href="https://github.com/alan-w-u/restaurant-table-manager" target="_blank">
           <figure>
-            <h2>Restaurant Table<br>Manager</h2>
-            <img src="images/restaurant-table-manager.png" alt="restaurant table manager" draggable="false">
+            <h2>Restaurant Table Manager</h2>
+            <img src="images/projects/restaurant-table-manager.png" alt="restaurant table manager" draggable="false">
             <figcaption>
               <div>
                 <button>Java</button>
                 <button>Swing</button>
                 <button>JUnit</button>
               </div>
-              <p>
-                Table Restaurant Manager is an application that helps waiters track restaurant table availability and
-                orders.
-                Restaurant menus, table orders, and table availabilities can be loaded and saved using <b>JSON</b> for
-                data persistence.
-                <br><br>
-                Dynamic and interactive GUI created using the <b>Java Swing</b> library.
-                Code was written in a <b>JUnit test-driven</b> environment with <b>100% test coverage</b>.
-                Debugging aided by event log implemented via the singleton pattern.
-              </p>
+              Table Restaurant Manager is an application that helps waiters track restaurant table availability and orders.
+              Restaurant menus, table orders, and table availabilities can be loaded and saved using <b>JSON</b> for data persistence.
+              <br><br>
+              Dynamic and interactive GUI created using the <b>Java Swing</b> library.
+              Code was written in a <b>JUnit test-driven</b> environment with <b>100% test coverage</b>.
+              Debugging aided by event log implemented via the singleton pattern.
             </figcaption>
           </figure>
         </a>
         <a href="https://github.com/alan-w-u/floating-fish" target="_blank">
           <figure>
             <h2>Floating Fish</h2>
-            <img src="images/floating-fish.png" alt="floating fish" draggable="false">
+            <img src="images/projects/floating-fish.png" alt="floating fish" draggable="false">
             <figcaption>
               <div>
                 <button>Java</button>
@@ -291,11 +296,9 @@
               </div>
               <p>
                 Floating Fish is a simple side-scrolling endless runner game.
-                This application was used as a learning tool to teach a friend the fundamentals of <b>object-oriented
-                  programming</b> via Java and Swing.
+                This application was used as a learning tool to teach a friend the fundamentals of <b>object-oriented programming</b> via Java and Swing.
                 <br><br>
-                This game demonstrates design elements such as <b>type hierarchies</b>, <b>polymorphism</b>, and
-                <b>abstract classes</b>.
+                This game demonstrates design elements such as <b>type hierarchies</b>, <b>polymorphism</b>, and <b>abstract classes</b>.
                 It also demonstrates how to create a GUI and register key inputs to control the game.
               </p>
             </figcaption>
@@ -304,7 +307,7 @@
         <a href="https://github.com/alan-w-u/simple-minigames" target="_blank">
           <figure>
             <h2>Simple Mini Games</h2>
-            <img src="images/simple-mini-games.png" alt="simple mini games" draggable="false">
+            <img src="images/projects/simple-mini-games.png" alt="simple mini games" draggable="false">
             <figcaption>
               <div>
                 <button>Python</button>
@@ -314,8 +317,7 @@
                 Simple Mini Games is a collection of games including <b>Snake</b>, <b>Tic Tac Toe</b>, and <b>Pong</b>.
                 The games were created using the Pygame library to handle the GUI and inputs.
                 <br><br>
-                This was a Capstone Project for grade 12 (senior year of high school) as required by the B.C.
-                curriculum.
+                This was a Capstone Project for grade 12 (senior year of high school) as required by the B.C. curriculum.
               </p>
             </figcaption>
           </figure>
@@ -323,18 +325,19 @@
       </div>
     </section>
     <section id="contact">
-      <h1>Contact</h1>
-      <br>
+      <h1 class="title">Contact</h1>
       <h3>Feel Free to Connect!</h3>
-      <a href="mailto:alanwu0004@gmail.com"><img src="images/email.png" alt="email" class="contact-logo"
-          draggable="false"></a>
-      <a href="https://www.linkedin.com/in/alan-w-u/" target="_blank"><img src="images/linkedin.png" alt="linkedin"
-          class="contact-logo" draggable="false"></a>
-      <a href="https://github.com/alan-w-u" target="_blank"><img src="images/github.png" alt="github"
-          class="contact-logo" draggable="false"></a>
+      <a href="mailto:alanwu0004@gmail.com">
+        <img src="images/email.png" alt="email" class="logo" draggable="false">
+      </a>
+      <a href="https://www.linkedin.com/in/alan-w-u/" target="_blank">
+        <img src="images/linkedin.png" alt="linkedin" class="logo" draggable="false">
+      </a>
+      <a href="https://github.com/alan-w-u" target="_blank">
+        <img src="images/github.png" alt="github" class="logo" draggable="false">
+      </a>
     </section>
   </main>
   <script src="script.js"></script>
 </body>
-
 </html>

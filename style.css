@@ -10,35 +10,27 @@ Order for CSS Elements:
 8. Else
 */
 
-/* 
-Order for CSS Documentation
-1. Main HTML/Semantic (Section) Elements
-2. General HTML Objects
-3. Classes
-4. ID
-5. Selectors
-*/
-
 /* Custom Colours */
 :root {
-  --paynes-grey: #555b6e;
-  --storm-grey: #6c7181;
-  --slate-grey: #6b738b;
-  --apricot: #ffd6ba;
-  --seasalt: #faf9f9;
-  --cambridge-blue: #89b0ae;
-  --rose-ebony: #764f51;
+  --jet: #353535;
+  --paynes-grey: #555B6E;
+  --storm-grey: #6C7181;
+  --slate-grey: #6B738B;
+  --platinum: #D9D9D9;
+  --seasalt: #FAF9F9;
+
+  --indigo-dye: #284B63;
+  --caribbean-current: #3C6E71;
+  --cambridge-blue: #89B0AE;
+  --apricot: #FFD6BA;
 }
 
-/* Main HTML/Semantic (Section) Elements */
 * {
   box-sizing: border-box;
   font-family: Verdana, Arial, sans-serif;
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--seasalt);
+  font-size: 1rem;
+  color: var(--jet);
   letter-spacing: 0.02rem;
-  text-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.25);
   text-decoration: none;
   scrollbar-gutter: auto;
 }
@@ -50,7 +42,7 @@ html, body {
   height: 100%;
   padding: 0;
   margin: 0;
-  background-color: var(--paynes-grey);
+  background-color: var(--seasalt);
   align-items: center;
   scroll-behavior: smooth;
 }
@@ -63,7 +55,7 @@ nav {
   z-index: 1;
   top: 0;
   padding: 0.25rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--jet);
   align-items: center;
   justify-content: center;
 }
@@ -96,93 +88,72 @@ figure {
 h1 {
   margin: 1rem;
   font-size: 2rem;
-  color: var(--apricot);
+  color: var(--indigo-dye);
 }
 
 h2 {
   font-size: 1.5rem;
-  color: var(--apricot);
+  color: var(--indigo-dye);
 }
 
 h3 {
   font-size: 1.5rem;
 }
 
-p {
-  font-weight: normal;
-}
-
-/* Classes */
 .nav-link {
   display: flex;
-  max-width: 25%;
-  max-height: auto;
+  position: relative;
   padding: 0.75rem;
   border-radius: 0.75rem;
   font-size: 1rem;
+  font-weight: bold;
+  color: var(--seasalt);
   justify-content: center;
 }
 
-.nav-link:hover {
-  background-color: var(--cambridge-blue);
-  transition: 0.2s ease-in-out;
-}
-
-.nav-link.active {
+.nav-link.selected {
   color: var(--apricot);
 }
 
-.about-info-key {
-  margin: 1rem 0 0 0;
-  font-size: 1rem;
-  color: var(--apricot);
-}
-
-.about-info-value {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-.about-info-contact {
-  width: 3rem;
-  height: auto;
-  padding: 0.5rem;
-  margin: 1rem 0;
-  filter: invert();
+.nav-link::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 1.25rem;
+  bottom: 25%;
+  width: 75%;
+  height: 25%;
+  background-color: var(--caribbean-current);
   transition: 0.2s ease-in-out;
 }
 
-.about-info-contact:hover {
-  width: 4rem;
+.nav-link:hover::before {
+  width: 90%;
+  height: 50%;
+  left: 5%;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  width: fit-content;
   height: auto;
-  margin: 0.5rem 0;
-  border-radius: 0.75rem;
-  background-color: var(--rose-ebony);
+  margin: 1rem auto;
 }
 
-.projects-live-website {
-  color: gold;
+.title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 1rem;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--platinum);
 }
 
-.contact-logo {
-  width: 4rem;
-  height: auto;
-  padding: 0.75rem;
-  margin: 0.5rem;
-  border-radius: 25%;
-  background-color: var(--rose-ebony);
-  filter: invert();
-  transition: 0.2s ease-in-out;
-}
-
-.contact-logo:hover {
-  width: 5rem;
-  height: auto;
-  margin: 0rem;
-}
-
-/* ID */
 #home {
   display: flex;
   flex-direction: column;
@@ -198,7 +169,7 @@ p {
   justify-content: center;
 }
 
-#picture {
+#home .profile-picture {
   width: 14rem;
   height: auto;
   margin: 1rem;
@@ -207,59 +178,57 @@ p {
   transition: 0.3s ease-in-out;
 }
 
-#picture:hover {
+#home .profile-picture:hover {
   width: 15rem;
   height: auto;
   margin: 0.5rem;
 }
 
-#picture:active {
+#home .profile-picture:active {
   width: 14rem;
   height: auto;
   margin: 1rem;
 }
 
-#name {
+#home .name {
   margin-bottom: 0.25rem;
   font-size: 4rem;
+  font-weight: bold;
   color: var(--seasalt);
   text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-#tag {
+#home .subheader {
   font-size: 1.25rem;
-  color: var(--paynes-grey);
-  text-shadow: none;
+  font-weight: bold;
+  color: var(--jet);
 }
 
-#down-arrow {
+#home .arrow {
   position: absolute;
   bottom: 1.5rem;
   width: 2.5rem;
   height: auto;
   filter: invert();
   transition: 0.2s ease-in-out;
-  animation: moveupdown 1.75s ease-in-out infinite;
+  animation: moveupdown 1.75s ease-in-out 3;
 }
 
-#down-arrow:hover {
+#home .arrow:hover {
   width: 3rem;
   height: auto;
 }
 
 @keyframes moveupdown {
-
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-1rem);
   }
 }
 
-#about-container {
+#about .container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -270,53 +239,86 @@ p {
   justify-content: center;
 }
 
-#about-photo {
+#about .photo {
   width: 17rem;
   height: 17rem;
   border-radius: 25%;
   box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-#about-blurb {
+#about .blurb {
   width: 40rem;
   height: auto;
   padding: 0 2rem;
   text-align: left;
 }
 
-#about-info {
+#about .info {
   padding: 1rem 0 0 0;
   text-align: left;
 }
 
-#about-skills {
+#about .info .key {
+  margin: 1rem 0 0 0;
+  color: var(--indigo-dye);
+}
+
+#about .info .value {
+  margin: 0.25rem 0 0.5rem 0;
+  font-weight: bold;
+}
+
+#about .info .contact {
+  width: 3rem;
+  height: auto;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+  transition: 0.2s ease-in-out;
+}
+
+#about .info .contact:hover {
+  width: 4rem;
+  height: auto;
+  margin: 0.5rem 0;
+  background-color: var(--platinum);
+}
+
+#about .skills {
   flex: 1;
   width: auto;
   height: 100%;
   padding: 0 1rem;
 }
 
-#about-skills div {
+#about .skills div {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 1rem;
+  border: 0.25rem solid var(--indigo-dye);
+  border-radius: 1rem;
+  background-color: var(--paynes-grey);
   align-items: center;
   justify-content: center;
 }
 
-#about-skills img {
-  width: auto;
-  height: 4.5rem;
+#about .skills figure {
+  margin: 0.5rem 0.75rem;
+}
+
+#about .skills img {
+  width: 4rem;
+  height: 4rem;
   padding: 0.5rem;
-  border-radius: 15%;
-  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  background-color: var(--slate-grey);
 }
 
-#about-skills figure {
-  margin: 0.5rem;
-}
-
-#about-skills figcaption {
-  font-size: 1rem;
+#about .skills figcaption {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--seasalt);
+  margin: 0.25rem 0 0 0;
 }
 
 #projects div {
@@ -324,79 +326,87 @@ p {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  max-width: 100rem;
-  max-height: auto;
   margin: auto;
   justify-content: center;
 }
 
 #projects a {
+  width: auto;
+  height: auto;
   margin: 0.5rem;
 }
 
 #projects h2 {
   margin: 0 0 1rem 0;
-}
-
-#projects p {
-  font-size: inherit;
-  letter-spacing: normal;
-  text-shadow: none;
+  color: var(--apricot);
 }
 
 #projects b {
   font-size: inherit;
   color: var(--apricot);
-  text-shadow: none;
 }
 
 #projects figure {
-  width: 100%;
-  height: auto;
-  max-width: 23rem;
-  max-height: auto;
+  width: 23rem;
+  height: 100%;
   padding: 1rem;
-  border-style: solid;
-  border-color: var(--paynes-grey);
+  border: 0.5rem solid var(--indigo-dye);
   border-radius: 1rem;
-  background-color: var(--storm-grey);
-  font-size: 0;
+  background-color: var(--paynes-grey);
   transition: 0.3s ease-in-out;
 }
 
 #projects figure:hover {
-  border-color: var(--seasalt);
+  border-color: var(--caribbean-current);
   background-color: var(--slate-grey);
-  font-size: 1rem;
-  transform: translateY(-1rem);
-}
-
-#projects figcaption {
-  width: 100%;
-  height: auto;
-  font-size: inherit;
-  text-align: left;
+  transform: translateY(-0.5rem);
 }
 
 #projects img {
   width: 100%;
   height: auto;
-  border-color: var(--paynes-grey);
-  border-style: solid;
+  border: solid var(--indigo-dye);
   border-radius: 0.5rem;
 }
 
 #projects button {
   padding: 0.25rem 0.5rem;
   margin: 0.1rem;
-  border-style: solid;
-  border-color: var(--paynes-grey);
+  border: solid var(--indigo-dye);
   border-radius: 0.25rem;
   background-color: var(--slate-grey);
-  font-size: 1rem;
-  text-shadow: none;
+  font-weight: bold;
+  color: var(--seasalt);
+}
+
+#projects figcaption {
+  width: 100%;
+  height: auto;
+  font-size: inherit;
+  color: var(--seasalt);
+  text-align: left;
+}
+
+#projects .live-website {
+  color: gold;
 }
 
 #contact {
   padding-bottom: 2rem;
+}
+
+#contact .logo {
+  width: 4rem;
+  height: auto;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  border-radius: 25%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
+}
+
+#contact .logo:hover {
+  width: 5rem;
+  height: auto;
+  margin: 0rem;
 }
