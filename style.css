@@ -13,9 +13,6 @@ Order for CSS Elements:
 /* Custom Colours */
 :root {
   --jet: #353535;
-  --paynes-grey: #555B6E;
-  --storm-grey: #6C7181;
-  --slate-grey: #6B738B;
   --platinum: #D9D9D9;
   --seasalt: #FAF9F9;
 
@@ -120,7 +117,7 @@ h3 {
   display: block;
   position: absolute;
   z-index: -1;
-  left: 1.25rem;
+  left: 1rem;
   bottom: 25%;
   width: 75%;
   height: 25%;
@@ -147,7 +144,7 @@ h3 {
   display: block;
   position: absolute;
   z-index: -1;
-  left: 1rem;
+  left: 0.5rem;
   bottom: 0;
   width: 100%;
   height: 50%;
@@ -198,7 +195,7 @@ h3 {
   text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
-#home .subheader {
+#home .name-subtitle {
   font-size: 1.25rem;
   font-weight: bold;
   color: var(--jet);
@@ -295,14 +292,13 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 1rem;
-  border: 0.25rem solid var(--indigo-dye);
-  border-radius: 1rem;
-  background-color: var(--paynes-grey);
   align-items: center;
   justify-content: center;
 }
 
 #about .skills figure {
+  display: flex;
+  flex-direction: column;
   margin: 0.5rem 0.75rem;
 }
 
@@ -311,13 +307,12 @@ h3 {
   height: 4rem;
   padding: 0.5rem;
   border-radius: 0.75rem;
-  background-color: var(--slate-grey);
+  background-color: var(--platinum);
 }
 
 #about .skills figcaption {
   font-size: 0.9rem;
   font-weight: bold;
-  color: var(--seasalt);
   margin: 0.25rem 0 0 0;
 }
 
@@ -331,8 +326,6 @@ h3 {
 }
 
 #projects a {
-  width: auto;
-  height: auto;
   margin: 0.5rem;
 }
 
@@ -342,7 +335,6 @@ h3 {
 }
 
 #projects b {
-  font-size: inherit;
   color: var(--apricot);
 }
 
@@ -352,13 +344,13 @@ h3 {
   padding: 1rem;
   border: 0.5rem solid var(--indigo-dye);
   border-radius: 1rem;
-  background-color: var(--paynes-grey);
+  background-color: color-mix(in srgb, var(--jet) 90%, var(--seasalt));
   transition: 0.3s ease-in-out;
 }
 
 #projects figure:hover {
-  border-color: var(--caribbean-current);
-  background-color: var(--slate-grey);
+  border-color: color-mix(in srgb, var(--indigo-dye) 90%, var(--seasalt));
+  background-color: color-mix(in srgb, var(--jet) 80%, var(--seasalt));
   transform: translateY(-0.5rem);
 }
 
@@ -369,12 +361,12 @@ h3 {
   border-radius: 0.5rem;
 }
 
-#projects button {
+#projects p {
   padding: 0.25rem 0.5rem;
   margin: 0.1rem;
   border: solid var(--indigo-dye);
   border-radius: 0.25rem;
-  background-color: var(--slate-grey);
+  background-color: color-mix(in srgb, var(--jet) 80%, var(--seasalt));
   font-weight: bold;
   color: var(--seasalt);
 }
