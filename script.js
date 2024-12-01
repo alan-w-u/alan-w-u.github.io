@@ -1,29 +1,46 @@
-// Constants
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-link");
-const projects = document.querySelectorAll("#projects figure");
+const sections = document.querySelectorAll("section")
+const navItems = document.querySelectorAll(".nav-item")
+const projects = document.querySelectorAll(".card")
 
-// Options for the IntersectionObserver
+const isTouchscreen = window.matchMedia("(pointer: coarse)").matches
+
 const observerOptions = {
-  threshold: 0.15, // Threshold for amount of section visible (%) before section is highlighted in the navigation bar
+  threshold: isTouchscreen ? 0.1 : 0.5, // Highlight when _% of the section is visible on the screen
   rootMargin: "-50px 0px 0px 0px" // Pre-empt entry into section to improve responsiveness
-};
+}
 
-// Highlight the section that is being viewed on the navigation bar
-const observer = new IntersectionObserver((entries) => {
+function observerCallback(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      navLinks.forEach(navLink => {
-        navLink.classList.remove("selected");
-        if (navLink.getAttribute("href").substring(1) === entry.target.id) {
-          navLink.classList.add("selected");
-        }
-      });
+      // Highlight the nav item of the section being viewed
+      navItems.forEach(navItem => {
+        const isViewingSection = navItem.getAttribute("href").substring(1) === entry.target.id
+        navItem.classList.toggle("selected", isViewingSection)
+      })
     }
-  });
-}, observerOptions);
+  })
+}
 
-// Observe to update what section is being viewed
-sections.forEach(section => {
-  observer.observe(section);
-});
+function initializeObserver() {
+  const observer = new IntersectionObserver(observerCallback, observerOptions)
+  // Observe sections to set what is being viewed
+  sections.forEach(section => {
+    observer.observe(section)
+  })
+}
+
+// Remove project hover effect on touchscreen devices
+function removeProjectHover() {
+  if (isTouchscreen) {
+    projects.forEach(project => {
+      project.classList.remove("hover")
+    })
+  }
+}
+
+function initialize() {
+  initializeObserver()
+  removeProjectHover()
+}
+
+initialize()

@@ -97,7 +97,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-.nav-link {
+.nav-item {
   display: flex;
   position: relative;
   padding: 0.75rem;
@@ -108,16 +108,28 @@ h3 {
   justify-content: center;
 }
 
-.nav-link.selected {
+@media (max-width: 500px) {
+  .nav-item {
+    font-size: 3.2vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav-item {
+    font-size: 2.75vw;
+  }
+}
+
+.nav-item.selected {
   color: var(--apricot);
 }
 
-.nav-link::before {
+.nav-item::before {
   content: '';
   display: block;
   position: absolute;
   z-index: -1;
-  left: 1rem;
+  left: 20%;
   bottom: 25%;
   width: 75%;
   height: 25%;
@@ -125,13 +137,13 @@ h3 {
   transition: 0.2s ease-in-out;
 }
 
-.nav-link:hover::before {
+.nav-item:hover::before, .nav-item.selected::before {
   width: 90%;
   height: 50%;
   left: 5%;
 }
 
-.title {
+.shadow {
   display: flex;
   position: relative;
   width: fit-content;
@@ -139,7 +151,7 @@ h3 {
   margin: 1rem auto;
 }
 
-.title::before {
+.shadow::before {
   content: '';
   display: block;
   position: absolute;
@@ -149,6 +161,20 @@ h3 {
   width: 100%;
   height: 50%;
   background-color: var(--platinum);
+}
+
+.card {
+  padding: 1rem;
+  border: 0.5rem solid var(--caribbean-current);
+  border-radius: 1rem;
+  background-color: color-mix(in srgb, var(--jet) 90%, var(--seasalt));
+  transition: 0.3s ease-in-out;
+}
+
+.card.hover:hover {
+  border-color: var(--cambridge-blue);
+  background-color: color-mix(in srgb, var(--jet) 80%, var(--seasalt));
+  transform: translateY(-0.5rem);
 }
 
 #home {
@@ -171,7 +197,7 @@ h3 {
   height: auto;
   margin: 1rem;
   border-radius: 25%;
-  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.5rem var(--jet);
   transition: 0.3s ease-in-out;
 }
 
@@ -188,17 +214,16 @@ h3 {
 }
 
 #home .name {
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.25rem 0;
   font-size: 4rem;
   font-weight: bold;
   color: var(--seasalt);
-  text-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0.1rem 0.5rem var(--jet);
 }
 
-#home .name-subtitle {
+#home .headline {
   font-size: 1.25rem;
   font-weight: bold;
-  color: var(--jet);
 }
 
 #home .arrow {
@@ -208,7 +233,7 @@ h3 {
   height: auto;
   filter: invert();
   transition: 0.2s ease-in-out;
-  animation: moveupdown 1.75s ease-in-out 3;
+  animation: moveupdown 1.75s ease-in-out 5;
 }
 
 #home .arrow:hover {
@@ -232,40 +257,41 @@ h3 {
   height: auto;
   max-width: 57rem;
   max-height: auto;
-  margin: auto;
+  margin: 0 auto;
   justify-content: center;
 }
 
-#about .photo {
+#about .personal-photo {
   width: 17rem;
   height: 17rem;
-  border-radius: 25%;
-  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 20%;
+  box-shadow: 0 0.1rem 0.5rem var(--jet);
 }
 
-#about .blurb {
+#about .personal-description {
   width: 40rem;
   height: auto;
   padding: 0 2rem;
+  font-size: 1.1rem;
   text-align: left;
 }
 
-#about .info {
+#about .personal-info {
   padding: 1rem 0 0 0;
   text-align: left;
 }
 
-#about .info .key {
+#about .personal-info .key {
   margin: 1rem 0 0 0;
   color: var(--indigo-dye);
 }
 
-#about .info .value {
+#about .personal-info .value {
   margin: 0.25rem 0 0.5rem 0;
   font-weight: bold;
 }
 
-#about .info .contact {
+#about .personal-info .contact {
   width: 3rem;
   height: auto;
   padding: 0.5rem;
@@ -274,7 +300,7 @@ h3 {
   transition: 0.2s ease-in-out;
 }
 
-#about .info .contact:hover {
+#about .personal-info .contact:hover {
   width: 4rem;
   height: auto;
   margin: 0.5rem 0;
@@ -321,12 +347,7 @@ h3 {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin: auto;
   justify-content: center;
-}
-
-#projects a {
-  margin: 0.5rem;
 }
 
 #projects h2 {
@@ -338,43 +359,45 @@ h3 {
   color: var(--apricot);
 }
 
-#projects figure {
-  width: 23rem;
-  height: 100%;
-  padding: 1rem;
-  border: 0.5rem solid var(--indigo-dye);
-  border-radius: 1rem;
-  background-color: color-mix(in srgb, var(--jet) 90%, var(--seasalt));
-  transition: 0.3s ease-in-out;
-}
-
-#projects figure:hover {
-  border-color: color-mix(in srgb, var(--indigo-dye) 90%, var(--seasalt));
-  background-color: color-mix(in srgb, var(--jet) 80%, var(--seasalt));
-  transform: translateY(-0.5rem);
-}
-
 #projects img {
   width: 100%;
   height: auto;
-  border: solid var(--indigo-dye);
+  border: solid var(--caribbean-current) 0.25rem;
   border-radius: 0.5rem;
+  transition: 0.3s ease-in-out;
 }
 
-#projects p {
+#projects .card {
+  width: 23rem;
+  height: auto;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+#projects .card.hover:hover img {
+  border-color: var(--cambridge-blue);
+}
+
+#projects .project-info {
+  display: inline;
+  width: 100%;
+  height: auto;
+}
+
+#projects .tech-stack {
+  margin: 0.25rem 0 1rem 0;
+}
+
+#projects .stack-item {
   padding: 0.25rem 0.5rem;
-  margin: 0.1rem;
-  border: solid var(--indigo-dye);
+  margin: 0.25rem;
   border-radius: 0.25rem;
-  background-color: color-mix(in srgb, var(--jet) 80%, var(--seasalt));
+  background-color: color-mix(in srgb, var(--jet) 70%, var(--seasalt));
   font-weight: bold;
   color: var(--seasalt);
 }
 
-#projects figcaption {
-  width: 100%;
-  height: auto;
-  font-size: inherit;
+#projects .project-description {
   color: var(--seasalt);
   text-align: left;
 }
@@ -384,7 +407,7 @@ h3 {
 }
 
 #contact {
-  padding-bottom: 2rem;
+  padding: 3rem 0;
 }
 
 #contact .logo {
@@ -393,12 +416,12 @@ h3 {
   padding: 0.75rem;
   margin: 0.5rem;
   border-radius: 25%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--platinum);
   transition: 0.2s ease-in-out;
 }
 
 #contact .logo:hover {
   width: 5rem;
   height: auto;
-  margin: 0rem;
+  margin: 0;
 }
