@@ -101,7 +101,6 @@ h3 {
   display: flex;
   position: relative;
   padding: 0.75rem;
-  border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: bold;
   color: var(--seasalt);
@@ -114,9 +113,15 @@ h3 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .nav-item {
-    font-size: 2.75vw;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 375px) {
+  .nav-item {
+    font-size: 2.6vw;
   }
 }
 
