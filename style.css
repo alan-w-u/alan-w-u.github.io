@@ -32,7 +32,8 @@ Order for CSS Elements:
   scrollbar-gutter: auto;
 }
 
-html, body {
+html,
+body {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -142,7 +143,8 @@ h3 {
   transition: 0.2s ease-in-out;
 }
 
-.nav-item:hover::before, .nav-item.selected::before {
+.nav-item:hover::before,
+.nav-item.selected::before {
   width: 90%;
   height: 50%;
   left: 5%;
@@ -247,9 +249,12 @@ h3 {
 }
 
 @keyframes moveupdown {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-1rem);
   }
