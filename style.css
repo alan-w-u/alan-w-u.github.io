@@ -1,7 +1,7 @@
 /* 
 Order for CSS Elements:
-1. Display (display, display styling, opacity, visibility, z-index)
-2. Positioning (position, top, bottom, left, right, float)
+1. Display (display, display styling, opacity, visibility)
+2. Positioning (position, z-index, top, bottom, left, right, float)
 3. Size (width, height, min/max width/height, padding, margin, box-sizing,)
 4. Border (border, border-radius, outline, resize)
 5. Background (background, box-shadow)
@@ -48,10 +48,9 @@ body {
 nav {
   display: flex;
   position: fixed;
+  z-index: 1;
   width: 100%;
   height: auto;
-  z-index: 1;
-  top: 0;
   padding: 0.25rem;
   background-color: var(--jet);
   align-items: center;
@@ -69,6 +68,8 @@ footer {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   padding: 3rem 0 0 0;
@@ -95,6 +96,12 @@ h2 {
 }
 
 h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: var(--apricot);
+}
+
+h4 {
   font-size: 1.5rem;
 }
 
@@ -352,17 +359,24 @@ h3 {
   margin: 0.25rem 0 0 0;
 }
 
+#experience .card {
+  width: 60%;
+  height: auto;
+}
+
+#experience img {
+  width: 30%;
+  height: auto;
+  border: solid var(--caribbean-current) 0.25rem;
+  border-radius: 0.5rem;
+}
+
 #projects div {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
   justify-content: center;
-}
-
-#projects h2 {
-  margin: 0 0 1rem 0;
-  color: var(--apricot);
 }
 
 #projects b {
