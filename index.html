@@ -24,9 +24,6 @@
       </a>
       <div class="name">Alan Wu</div>
       <div class="headline">Computer Science @ UBC</div>
-      <a href="#about" draggable="false">
-        <img src="images/down-arrow.png" alt="Down Arrow" class="arrow" draggable="false">
-      </a>
     </section>
     <section id="about">
       <h1 class="shadow">About</h1>
@@ -216,25 +213,86 @@
     </section>
     <section id="experience">
       <h1 class="shadow">Experience</h1>
-      <div class="card">
-        <h3>SMART Technologies</h3>
-        <img src="images/experience/smart-technologies.jpg" alt="SMART Technologies" draggable="false">
+      <div class="container">
+        <div class="wrapper card">
+          <div class="key">
+            <h3>SMART Technologies</h3>
+            <b>Software Engineer Intern</b>
+            <p>Calgary, AB, Canada</p>
+            <p>Sep 2024 — Aug 2025</p>
+            <br>
+            <div class="tech-stack">
+              <p class="stack-item">Vue</p>
+              <p class="stack-item">JavaScript</p>
+              <p class="stack-item">TypeScript</p>
+              <p class="stack-item">Firebase</p>
+              <p class="stack-item">AWS</p>
+            </div>
+          </div>
+          <div class="vl"></div>
+          <ul class="value">
+            <li>Develop innovative solutions for <b>Lumio</b>, an edtech platform enhancing digital learning for <b>over 1.5 million</b> users in classrooms around the world.</li>
+            <li>Architect and maintain a large-scale <b>Vue</b> application leveraging <b>Firebase</b> and <b>AWS S3</b> cloud storage.</li>
+            <li>Practice <b>Agile development</b> with <b>CI/CD workflows</b> enabling seamless feature integration and time-to-market.</li>
+            <li>Oversee and lead the end-to-end lifecycle of novel features such as Learning Management System (LMS) integration with Canvas and Schoology.</li>
+            <li>Conduct code reviews, write Jest unit tests, and work closely with the QA team to deliver scalable, robust code.</li>
+            <li><b>Automate TeamCity pipelines</b> to streamline build, test, and deployment processes to optimize releases.</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="projects">
       <h1 class="shadow">Projects</h1>
       <h4>Click to View Project</h4>
-      <div>
-        <a href="https://github.com/alan-w-u/foodease" class="card hover" target="_blank">
+      <div class="container">
+        <a href="https://github.com/alan-w-u/alloy" class="wrapper card hover" target="_blank">
+          <h3>Alloy</h3>
+          <img src="images/projects/alloy.png" alt="Alloy" draggable="false">
+          <div class="project-info">
+            <div class="tech-stack">
+              <p class="stack-item">React</p>
+              <p class="stack-item">JavaScript</p>
+              <p class="stack-item">Node</p>
+              <p class="stack-item">Firebase</p>
+            </div>
+            <p class="project-description">
+              Alloy bridges the gaps in clubs, workplaces, and social groups by intelligently generating personalized hangouts.
+              It aims to foster meaningful connections beyond the user's immediate team or social circle by forming groups based
+              insights like MBTI and shared personal interests.
+              The web app uses a <b>Firebase</b> database to manage user and hangout information, and integrates the
+              <b>Google Places API</b> to recommend a tailored hangout activity with detailed locale information.
+              <br><br>
+              Project at <b>nwHacks 2025</b>, a 24-hour hackathon of 730+ participants hosted at UBC.
+            </p>
+          </div>
+        </a>
+        <a href="https://github.com/alan-w-u/trailfinder" class="wrapper card hover" target="_blank">
+          <h3>TrailFinder</h3>
+          <img src="images/projects/trailfinder.png" alt="TrailFinder" draggable="false">
+          <div class="project-info">
+            <div class="tech-stack">
+              <p class="stack-item">React</p>
+              <p class="stack-item">JavaScript</p>
+              <p class="stack-item">Node</p>
+              <p class="stack-item">Express</p>
+              <p class="stack-item">Oracle</p>
+              <p class="stack-item">SQL*Plus</p>
+            </div>
+            <p class="project-description">
+              TrailFinder is a web app that helps users discover and explore hiking trails near them.
+              It consolidates all the hiking trail information one would need making it easy to find, prepare for, and document their next adventure.
+              Detailed trail descriptions, hazard alerts, user reviews, and more are stored in an <b>Oracle database</b> queried using <b>Express</b> and <b>SQL*Plus</b>.
+            </p>
+          </div>
+        </a>
+        <a href="https://github.com/alan-w-u/foodease" class="wrapper card hover" target="_blank">
           <h3>Foodease</h3>
           <img src="images/projects/foodease.png" alt="Foodease" draggable="false">
           <div class="project-info">
             <div class="tech-stack">
-              <p class="stack-item">JavaScript</p>
               <p class="stack-item">React</p>
+              <p class="stack-item">JavaScript</p>
               <p class="stack-item">Node</p>
-              <p class="stack-item">HTML</p>
-              <p class="stack-item">CSS</p>
             </div>
             <p class="project-description">
               Foodease is a website dedicated to solving the infamous question: "Where should we eat?"
@@ -246,7 +304,7 @@
             </p>
           </div>
         </a>
-        <a href="https://alan-w-u.github.io/touchtype" class="card hover" target="_blank">
+        <a href="https://alan-w-u.github.io/touchtype" class="wrapper card hover" target="_blank">
           <h3>TouchType</h3>
           <img src="images/projects/touchtype.png" alt="TouchType" draggable="false">
           <div class="project-info">
@@ -259,10 +317,13 @@
             <p class="project-description">
               TouchType is a website that delivers various keyboard-related activities and information to users.
               It includes a <b>Typing Test</b>, <b>Keyboard Test</b>, and <b>Reaction Time Test</b>.
+              <br><br>
+              This website was my first foray into web development, born from a passion project that coincided
+              with my growing interest in mechanical keyboards at the time.
             </p>
           </div>
         </a>
-        <a href="https://github.com/alan-w-u/nook" class="card hover" target="_blank">
+        <a href="https://github.com/alan-w-u/nook" class="wrapper card hover" target="_blank">
           <h3>Nook</h3>
           <img src="images/projects/nook.png" alt="Nook" draggable="false">
           <div class="project-info">
@@ -279,7 +340,7 @@
             </p>
           </div>
         </a>
-        <a href="https://github.com/alan-w-u/restaurant-table-manager" class="card hover" target="_blank">
+        <a href="https://github.com/alan-w-u/restaurant-table-manager" class="wrapper card hover" target="_blank">
           <h3>Restaurant Table Manager</h3>
           <img src="images/projects/restaurant-table-manager.png" alt="Restaurant Table Manager" draggable="false">
           <div class="project-info">
@@ -299,7 +360,7 @@
             </p>
           </div>
         </a>
-        <a href="https://github.com/alan-w-u/floating-fish" class="card hover" target="_blank">
+        <a href="https://github.com/alan-w-u/floating-fish" class="wrapper card hover" target="_blank">
           <h3>Floating Fish</h3>
           <img src="images/projects/floating-fish.png" alt="Floating Fish" draggable="false">
           <div class="project-info">
@@ -318,7 +379,7 @@
             </p>
           </div>
         </a>
-        <a href="https://github.com/alan-w-u/simple-minigames" class="card hover" target="_blank">
+        <a href="https://github.com/alan-w-u/simple-minigames" class="wrapper card hover" target="_blank">
           <h3>Simple Mini Games</h3>
           <img src="images/projects/simple-mini-games.png" alt="Simple Mini Games" draggable="false">
           <div class="project-info">
