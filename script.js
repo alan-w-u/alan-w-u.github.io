@@ -5,7 +5,7 @@ const projects = document.querySelectorAll(".card")
 const isTouchscreen = window.matchMedia("(pointer: coarse)").matches
 
 const observerOptions = {
-  threshold: isTouchscreen ? 0.1 : 0.5, // Highlight when _% of the section is visible on the screen
+  threshold: isTouchscreen ? 0.1 : 0.3, // Highlight when _% of the section is visible on the screen
   rootMargin: "-50px 0px 0px 0px" // Pre-empt entry into section to improve responsiveness
 }
 
