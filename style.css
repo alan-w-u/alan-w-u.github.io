@@ -14,7 +14,6 @@
   font-family: Verdana, Arial, sans-serif;
   font-size: 1rem;
   color: var(--jet);
-  letter-spacing: 0.02rem;
   text-decoration: none;
   scrollbar-gutter: auto;
 }
@@ -355,7 +354,7 @@ h4 {
 }
 
 #experience .value b {
-  color: var(--caribbean-current);
+  color: var(--indigo-dye);
 }
 
 #experience .value li:not(:last-child) {
@@ -386,7 +385,7 @@ h4 {
 }
 
 #projects b {
-  color: var(--caribbean-current);
+  color: var(--indigo-dye);
 }
 
 #projects img {
