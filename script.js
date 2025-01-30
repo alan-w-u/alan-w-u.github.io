@@ -4,9 +4,31 @@ const projects = document.querySelectorAll(".card")
 
 const isTouchscreen = window.matchMedia("(pointer: coarse)").matches
 
-const observerOptions = {
-  threshold: isTouchscreen ? 0.1 : 0.3, // Highlight when _% of the section is visible on the screen
-  rootMargin: "-50px 0px 0px 0px" // Pre-empt entry into section to improve responsiveness
+function initializeObserver() {
+  const observer = new IntersectionObserver(observerCallback, observerOptions())
+  // Observe sections to set what is being viewed
+  sections.forEach(section => {
+    observer.observe(section)
+  })
+}
+
+function observerThreshold() {
+  const screenWidth = window.innerWidth
+  switch (true) {
+    case (screenWidth < 1080):
+      return 0.1
+    case (screenWidth < 1440):
+      return 0.2
+    default:
+      return 0.3
+  }
+}
+
+function observerOptions() {
+  return {
+    threshold: observerThreshold(), // Highlight when _% of the section is visible on the screen
+    rootMargin: "-50px 0px 0px 0px" // Pre-empt entry into section to improve responsiveness
+  }
 }
 
 function observerCallback(entries) {
@@ -18,14 +40,6 @@ function observerCallback(entries) {
         navItem.classList.toggle("selected", isViewingSection)
       })
     }
-  })
-}
-
-function initializeObserver() {
-  const observer = new IntersectionObserver(observerCallback, observerOptions)
-  // Observe sections to set what is being viewed
-  sections.forEach(section => {
-    observer.observe(section)
   })
 }
 

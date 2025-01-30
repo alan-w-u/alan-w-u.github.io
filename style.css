@@ -402,7 +402,7 @@ h4 {
 
 #projects .wrapper {
   width: 25rem;
-  height: auto;
+  height: fit-content;
   margin: 0.5rem;
 }
 
