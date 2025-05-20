@@ -7,6 +7,8 @@
   --caribbean-current: #3C6E71;
   --cambridge-blue: #89B0AE;
   --apricot: #FFD6BA;
+
+  --max-width: 1440px
 }
 
 * {
@@ -91,6 +93,16 @@ h4 {
   font-size: 1.5rem;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  height: auto;
+  max-width: var(--max-width);
+  max-height: auto;
+  justify-content: center;
+}
+
 .nav-item {
   display: flex;
   position: relative;
@@ -160,7 +172,6 @@ h4 {
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  margin: 0.25rem 0;
 }
 
 .stack-item {
@@ -228,15 +239,8 @@ h4 {
 }
 
 #about .container {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: auto;
-  max-width: 70rem;
-  max-height: auto;
-  padding: 0 5rem;
-  margin: 0 auto;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 #about .personal-photo {
@@ -248,9 +252,7 @@ h4 {
 }
 
 #about .personal-description {
-  width: 40rem;
-  height: auto;
-  padding: 0 2rem;
+  padding: 0 4rem;
   font-size: 1.1rem;
   text-align: start;
 }
@@ -287,9 +289,6 @@ h4 {
 }
 
 #about .skills {
-  flex: 1;
-  width: auto;
-  height: 100%;
   padding: 0 1rem;
 }
 
@@ -321,21 +320,14 @@ h4 {
   margin: 0.25rem 0 0 0;
 }
 
-#experience .container {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 5rem;
-  justify-content: center;
-}
-
 #experience .wrapper {
   display: flex;
-  width: 75%;
-  height: auto;
-  margin: 0.5rem;
+  margin: 1rem 0;
 }
 
 #experience .key {
+  width: 25%;
+  height: auto;
   text-align: start;
 }
 
@@ -348,9 +340,17 @@ h4 {
   margin: 0.25rem 0;
 }
 
+#experience .tech-stack {
+  margin: 1rem 0 0 0;
+}
+
 #experience .value {
+  width: 75%;
+  height: auto;
   text-align: start;
+  line-height: 1.25rem;
   list-style-type: square;
+  padding: 0 0 0 2rem;
 }
 
 #experience .value b {
@@ -391,13 +391,10 @@ h4 {
 #projects img {
   width: 100%;
   height: auto;
+  background-color: white;
   border: solid var(--caribbean-current) 0.25rem;
   border-radius: 0.5rem;
   transition: 0.3s ease-in-out;
-}
-
-#projects .container {
-  padding: 0 5rem;
 }
 
 #projects .wrapper {
@@ -445,35 +442,24 @@ h4 {
   background-color: var(--platinum);
 }
 
-@media (max-width: 800px) {
-  #experience .container {
-    padding: 0 2rem;
+@media (max-width: 1000px) {
+  #about .container {
+    display: flex;
   }
-
+  
   #experience .wrapper {
     flex-direction: column;
-    width: 100%;
   }
 
-  #projects .container {
-    padding: 0 2rem;
+  #experience .key,
+  #experience .value {
+    width: auto;
+    height: auto;
   }
 }
 
 @media (max-width: 500px) {
   .nav-item {
-    font-size: 3.2vw;
-  }
-}
-
-@media (max-width: 450px) {
-  .nav-item {
     font-size: 3vw;
-  }
-}
-
-@media (max-width: 375px) {
-  .nav-item {
-    font-size: 2.6vw;
   }
 }
