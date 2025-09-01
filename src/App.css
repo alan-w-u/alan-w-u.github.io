@@ -1,0 +1,8 @@
+section {
+  padding: 0 var(--page-inset);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
