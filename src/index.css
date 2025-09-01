@@ -1,3 +1,54 @@
+:root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-200: #cccccc;
+  --color-neutral-400: #999999;
+  --color-neutral-600: #666666;
+  --color-neutral-800: #333333;
+  --color-neutral-1000: #000000;
+
+  --color-red-0: #f2d5d8;
+  --color-red-200: #e4b3b8;
+  --color-red-400: #c47781;
+  --color-red-600: #8a4f59;
+  --color-red-800: #542e33;
+
+  --color-green-0: #d5e2d8;
+  --color-green-200: #b3cbb8;
+  --color-green-400: #77a480;
+  --color-green-600: #4f715a;
+  --color-green-800: #2f4536;
+
+  --color-blue-0: #d5dbe2;
+  --color-blue-200: #b3bfcb;
+  --color-blue-400: #778ca4;
+  --color-blue-600: #4f6271;
+  --color-blue-800: #313c45;
+
+  --color-background: var(--color-neutral-0);
+  --color-text: var(--color-neutral-800);
+
+  --font-family-caladea: 'Caladea', Times, serif;
+  --font-family-outfit: 'Outfit', Arial, sans-serif;
+
+  --page-inset: 10%;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  --border-size-sm: 1px;
+  --border-size-md: 2px;
+  --border-size-lg: 4px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  --border-transparent: var(--border-size-sm) solid transparent;
+  --border-white: var(--border-size-md) solid var(--color-neutral-0);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,5 +58,8 @@
 html,
 body,
 #root {
+  background: var(--color-background);
+  font-family: var(--font-family-outfit);
+  color: var(--color-text);
   scroll-behavior: smooth;
 }
