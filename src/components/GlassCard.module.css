@@ -1,0 +1,10 @@
+.glass-card {
+  width: fit-content;
+  height: fit-content;
+  padding: var(--space-md);
+  border-radius: var(--border-radius-lg);
+
+  > * {
+    border-radius: var(--border-radius-md)
+  }
+}
