@@ -1,5 +1,6 @@
 section {
   padding: var(--space-xl) var(--page-inset);
+  scroll-margin: var(--nav-height);
 }
 
 a {
@@ -18,6 +19,6 @@ a {
 }
 
 .title {
-  margin: var(--space-xl) 0;
+  margin: 0 0 var(--space-xl) 0;
   font-size: 4rem;
 }
