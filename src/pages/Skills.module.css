@@ -1,3 +1,26 @@
 .skills {
-  
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--color-blue-400), var(--color-blue-600));
+  align-items: center;
+
+  > h1 {
+    color: var(--color-neutral-0);
+  }
+}
+
+.type {
+  margin: 0 0 var(--space-xl) 0;
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-neutral-0);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-lg);
+  margin: 0 0 var(--space-xl) 0;
+  justify-content: center;
 }
