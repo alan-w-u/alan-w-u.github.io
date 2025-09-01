@@ -1,5 +1,5 @@
 section {
-  padding: 0 var(--page-inset);
+  padding: var(--space-xl) var(--page-inset);
 }
 
 a {
@@ -15,4 +15,9 @@ a {
     0px 4px 16px 0px color-mix(in srgb, var(--color-neutral-600), transparent 75%),
     inset 0 -4px 8px color-mix(in srgb, var(--color-neutral-600), transparent 75%),
     inset 0 4px 8px color-mix(in srgb, var(--color-neutral-0), transparent 75%);
+}
+
+.title {
+  margin: var(--space-xl) 0;
+  font-size: 4rem;
 }
