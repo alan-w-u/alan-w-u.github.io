@@ -1,3 +1,12 @@
 .experience {
-  
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--color-background), var(--color-blue-200));
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
 }

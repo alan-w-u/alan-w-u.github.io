@@ -1,0 +1,47 @@
+.experience-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 40rem;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  border-radius: var(--border-radius-lg);
+
+  img {
+    width: 6rem;
+    border-radius: var(--border-radius-md);
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.company {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.duration {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.description {
+  grid-column: span 2;
+  padding: 0 var(--space-lg);
+  font-size: 1.1rem;
+  list-style-type: square;
+
+  li {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-card {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
