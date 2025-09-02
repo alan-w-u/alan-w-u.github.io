@@ -1,3 +1,49 @@
 .contact {
-  
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 var(--nav-height) 0;
+  background: linear-gradient(var(--color-blue-600), var(--color-blue-800));
+  align-items: center;
+
+  > h1 {
+    color: var(--color-neutral-0);
+  }
+
+  img {
+    height: 4rem;
+    filter: invert(100%) brightness(1000%) saturate(0%);
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.connect {
+  margin: 0 0 var(--space-xl) 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-neutral-0);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: var(--space-xl);
+  align-items: center;
+  justify-content: center;
+
+  a {
+    padding: var(--space-sm);
+
+    &:hover {
+      img {
+        transform: translateY(calc(var(--space-md) * -1));
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 0 0 calc(var(--nav-height) + var(--space-xl)) 0;
+  }
 }
