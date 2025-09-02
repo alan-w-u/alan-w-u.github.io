@@ -29,10 +29,6 @@
   gap: var(--space-lg);
   font-size: 1.25rem;
 
-  &:has(p:hover) > p:not(:hover) {
-    color: var(--color-neutral-600);
-  }
-
   p {
     position: relative;
     width: fit-content;
@@ -52,13 +48,6 @@
       background: linear-gradient(to right, var(--color-blue-800), var(--color-blue-400));
       border-radius: calc(var(--border-size-sm) / 2);
       transition: inherit;
-    }
-
-    &:hover {
-      &::after {
-        width: 100%;
-        left: 0;
-      }
     }
   }
 }
@@ -155,25 +144,33 @@
     transition: 0.2s ease-in-out;
 
     &:not(.open) {
+      visibility: hidden;
       transform: translateY(var(--nav-menu-gap));
       opacity: 0;
-    }
-
-    &:has(p:hover) > p:not(:hover) {
-      color: inherit;
     }
 
     p {
       width: 100%;
       padding: var(--space-sm) 0;
-
-      &::after {
-        display: none;
-      }
     }
   }
 
   .menu-button {
     display: flex;
+  }
+}
+
+@media (hover: hover) {
+  .menu {
+    &:has(p:hover) > p:not(:hover) {
+      color: var(--color-neutral-600);
+    }
+
+    p:hover {
+      &::after {
+        width: 100%;
+        left: 0;
+      }
+    }
   }
 }

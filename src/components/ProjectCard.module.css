@@ -8,10 +8,6 @@
   align-items: center;
   transition: 0.2s ease-in-out;
 
-  &:hover {
-    transform: translateY(calc(var(--space-md) * -1));
-  }
-
   & > *:not(img) {
     width: 100%;
     padding: 0 var(--space-md);
@@ -47,6 +43,12 @@
 
 .description {
   font-size: 1.1rem;
+}
+
+@media (hover: hover) {
+  .project-card:hover {
+    transform: translateY(calc(var(--space-md) * -1));
+  }
 }
 
 @media (max-width: 700px) {

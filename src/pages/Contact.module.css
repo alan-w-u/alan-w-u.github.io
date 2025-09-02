@@ -9,10 +9,13 @@
     color: var(--color-neutral-0);
   }
 
-  img {
-    height: 4rem;
-    filter: invert(100%) brightness(1000%) saturate(0%);
+  a {
     transition: 0.2s ease-in-out;
+
+    img {
+      height: 4rem;
+      filter: invert(100%) brightness(1000%) saturate(0%);
+    }
   }
 }
 
@@ -31,14 +34,13 @@
   justify-content: center;
 
   a {
-    padding: var(--space-sm);
+    padding: var(--space-xs);
+  }
+}
 
-    &:hover {
-      img {
-        transform: translateY(calc(var(--space-md) * -1));
-        margin: 0;
-      }
-    }
+@media (hover: hover) {
+  .cards a:hover {
+    transform: translateY(calc(var(--space-md) * -1));
   }
 }
 

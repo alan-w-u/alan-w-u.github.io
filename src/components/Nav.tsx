@@ -14,6 +14,7 @@ export default function Nav() {
 
   function navigate(id: string) {
     document.getElementById(id)?.scrollIntoView()
+    setIsMenuOpen(false)
   }
 
   return (
