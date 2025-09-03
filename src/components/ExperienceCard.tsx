@@ -2,7 +2,7 @@ import type { Experience } from '../types/experience'
 import styles from './ExperienceCard.module.css'
 
 type ExperienceCardProps = {
-  experience: Experience
+  experience: Experience;
 }
 
 export default function ExperienceCard({ experience }: ExperienceCardProps) {

@@ -2,7 +2,7 @@ import type { Project } from '../types/project'
 import styles from './ProjectCard.module.css'
 
 type ProjectCardProps = {
-  project: Project
+  project: Project;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {

@@ -2,7 +2,7 @@ import type { Skill } from '../types/skill'
 import styles from './SkillCard.module.css'
 
 type SkillCardProps = {
-  skill: Skill
+  skill: Skill;
 }
 
 export default function SkillCard({ skill }: SkillCardProps) {

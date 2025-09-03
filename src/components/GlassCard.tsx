@@ -1,8 +1,8 @@
 import styles from './GlassCard.module.css'
 
 type GlassCardProps = {
-  children: React.ReactNode
-  className?: string
+  children: React.ReactNode;
+  className?: string;
 }
 
 export default function GlassCard({ children, className }: GlassCardProps) {
